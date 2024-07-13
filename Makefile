@@ -39,7 +39,7 @@ endif
 SDL=yes
 ifeq ($(SDL),yes)
 CFLAGS += `sdl-config --cflags` -DWITH_SDL=1
-LFLAGS += `sdl-config --libs` -lSDL_mixer
+LFLAGS += `sdl-config --libs` -lSDL2_mixer
 endif
 ifneq ($(SDL),yes)
 ifneq ($(SDL),no)
